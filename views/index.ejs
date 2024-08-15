@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/bootstrap-dark.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <title>Chat</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand">Chat</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="mb-3 mt-3">
+                    <ul style="list-style: none" class="messages-list"></ul>
+                </div>
+                <div class="mb-3 mt-4">
+                    <input class="form-control username-input" placeholder="Ваше имя" />
+                </div>
+                <div class="mb-3 mt-4">
+                    <input class="form-control message-input" placeholder="Сообщение..." />
+                </div>
+                <div class="mb-3 mt-4">
+                    <button class="btn btn-primary send-btn">Отправить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
